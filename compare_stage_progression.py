@@ -28,7 +28,7 @@ def main():
     #    We care about = whether the time slope is different across stages
     
     # Read in master dataframe 
-    master_df = pd.read_csv(r'C:\Users\kelseysinclair\Downloads\master_df.csv', sep = ',')
+    master_df = pd.read_csv(r'kelseysinclair/Downloads/master_df.csv', sep = ',')
     
     # Assign each patient to a stage based on baseline stage only
     # This is because if NHY changes over time and you assign stage at every row, then a patient could be “early” at one visit and “middle” later
@@ -171,3 +171,6 @@ def main():
     
         plt.legend(title="Stage")
         plt.show()
+        
+if __name__ == "__main__":
+    main()
